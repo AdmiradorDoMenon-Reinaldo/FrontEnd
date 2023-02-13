@@ -1,6 +1,6 @@
 # LUIZ IANOSKI 🥷
 
-Olá!  Meu nome é Luiz Gustavo Ianoski. 👋
+Olá senhores. Eu sou o Luiz Gustavo Ianoski. 🗿🍷
 
  - Meu e-mail de contato pessoal é: adm.camara46@gmail.com 🤖
  - Meu e-mail de contato estudantil é: luiz.ianoski.oliveira@escola.pr.gov.br 👾
