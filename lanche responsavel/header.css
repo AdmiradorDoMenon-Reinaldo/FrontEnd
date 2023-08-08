@@ -1,0 +1,97 @@
+@charset "UTF-8";
+.cab{
+    background-color: var(--branco);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+.conteiner{
+    display: flex;
+    align-items: center;
+}
+.conteiner_btn{
+    display: none;
+}
+.conteiner_btn:checked~.lista_menu{
+    display: block;
+}
+.cab_menu{
+    width: 30px;
+    height: 30px;
+    background-image: url("img/burger-menu-svgrepo-com\ \(1\).svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+}
+.conteiner_img{
+    padding: 1em;
+}
+.lista_menu{
+    display: none;
+    position: absolute;
+    top: 90%;
+    background-color: var(--branco);
+    width: 40vw;
+}
+.lista_menu_tit{
+    color: rgb(255, 0, 0);
+    font-size: 20px;
+    font-weight: bolder;
+}
+.lista_menu_item{
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+}
+.tijolo{
+    height: 50px;
+    width: 40px;
+    margin-left: 35px;
+}
+.slogan{
+    font-size: 20px;
+    color: rgb(255, 0, 0);
+    margin-left: 600px;
+    font-weight: bolder;
+}
+.nomeloja{
+    margin-left: 15px;
+    color: rgb(255, 0, 0);
+    font-size: 20px;
+    font-weight: bolder;
+    
+}
+.textentrega{
+    color: rgb(0, 0, 0);
+    font-size: 25px;
+    text-align: center;
+}
+.caminhao{
+    width: 100px;
+    height: 90px;
+    align-self : center;
+}
+.check{
+    width:100px ;
+    height: 90px;
+    align-self: center;
+}
+.decoration{
+    width: 100px;
+    height: 90px;
+    align-self: center;
+}
+@media (max-width: 550px) {
+    .nomeloja {
+      display: none;
+    }
+  
+    .slogan {
+      display: none;
+    }
+}
+@media (max-width: 768px) {
+    .slogan {
+      display: none;
+    }
+}
