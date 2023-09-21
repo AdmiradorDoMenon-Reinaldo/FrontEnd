@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculadora de Média</title>
+    </script>
+</head>
+<body>
+
+
+    <script>
+        var i = 0
+        var qtd = Number(prompt('INFORME A QUANTIDADE DE ALUNOS:'))
+        do {
+       
+            var nome = String(prompt('INFORME O NOME DO ALUNO'))
+            var nota1 = Number(prompt("informe a primeira nota")) 
+            var nota2 = Number(prompt("informe a segunda nota")) 
+            var nota3 = Number(prompt("informe a terceira nota")) 
+            var mediafinal = (nota1+nota2+nota3)/3
+            i++
+
+
+            
+        if(mediafinal>=60){
+            document.write('PARABÉNS ' , +nome+ 'FOI APROVADO COM SUA MÉDIA IGUAL A: '  +mediafinal)
+        }
+        else{
+            document.write('QUE PENA, ' +nome+ ' FOI REPROVADO COM A SUA MÉDIA IGUAL A: '  +mediafinal)
+        }
+    } while(i< qtd)
+    </script>
+
+
+</body>
+</html>
