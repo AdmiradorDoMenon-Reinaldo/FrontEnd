@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tarefa</title>
+  <style>
+    body{
+      display:flex; 
+      flex-direction:column;
+    }
+  </style>
+</head>
+<body>
+  <div >
+    <a href='https://g1.globo.com/'><button id="botao1" onmouseenter="entrar1()" onmouseout="sair1()">veja agora! as melhores noticias</button></a>
+  </div>
+  <div >
+    <a href='https://ge.globo.com/pr/futebol/times/athletico-pr/'><button id="botao2" onmouseenter="entrar2()" onmouseout="sair2()">veja agora as notícias sobre o melhor time do futebol brasileiro</button></a>
+  </div>
+  <div >
+    <a href='https://ge.globo.com/pr/futebol/times/coritiba/'><button id="botao3" onmouseenter="entrar3()" onmouseout="sair3()">veja as notícias do pior time da história do brasil</button></a>
+  </div>
+
+<script>
+        function entrar1(){
+            var e = window.document.getElementById('botao1')
+            e.innerText='G1'
+            e.style.background='red'
+        }
+        function sair1(){
+            var s = window.document.getElementById('botao1')
+            s.innerText='G1'
+            s.style.background='yellow'
+        }
+        function entrar2(){
+            var e = window.document.getElementById('botao2')
+            e.innerText='ATHLETICO PR'
+            e.style.background='red'
+        }
+        function sair2(){
+            var s = window.document.getElementById('botao2')
+            s.innerText='ATHLETICO PR'
+            s.style.background='blue'
+        }
+          function entrar3(){
+            var e = window.document.getElementById('botao3')
+            e.innerText='CORITIBA'
+            e.style.background='green'
+        }
+        function sair3(){
+            var s = window.document.getElementById('botao3')
+            s.innerText='CORITIBA'
+            s.style.background='pink'
+        }
+    </script>
+</body>
+</html>
