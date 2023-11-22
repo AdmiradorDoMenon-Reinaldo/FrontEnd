@@ -1,0 +1,85 @@
+:root {
+  --cinza: #8f8f8f;
+  --vermelha: #e93d50;
+  --vermelha-escura: #af303f;
+  --branca: #fff;
+  --luz: #0011ff;
+}
+body {
+  align-items: center;
+  background: linear-gradient(to right, #00eeff, #ff00dd);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  min-height: 100vh;
+}
+.teclado {
+  background: linear-gradient(to left, #00eeff, #ff00dd);
+  box-shadow: 6px 8px 0 6px #000770;
+  border-radius: 30px;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 10px;
+}
+.tecla {
+  background-color: var(--branca);
+  border-radius: 30px;
+  box-shadow: 3px 3px 0 #020a7e;
+  color: blue;
+  cursor: pointer;
+  height: 120px;
+  font-weight: bold;
+  line-height: 120px;
+  width: 120px;
+}
+.tecla.ativa,
+.tecla:active {
+  background-color: #006eff;
+  border: 4px double #0008ff;
+  box-shadow: 3px 3px 0 var(--vermelha-escura) inset;
+  color: var(--branca);
+  outline: none;
+}
+.tecla.focus,
+.tecla:focus {
+  outline: none;
+  box-shadow: 1px 1px 10px var(--luz);
+}
+.tecla img {
+  max-width: 100%;
+  max-height: 90%;
+  margin-top: 5px;
+  object-fit: contain;
+}
+.cruel {
+  text-align: center;
+  color: black;
+  text-shadow: -1px 0 white, 0 1px white, 1px 0 snow, 0 -1px black;
+}
+h1 {
+  color: var(--branca);
+  margin-bottom: 20px;
+  font-size: 2rem;
+  -webkit-background-clip: text;
+  background-clip: text;
+  transition: color 0.9s ease;
+}
+h1:hover {
+  color: #04ff00;
+  text-decoration: underline;
+}
+h2 {
+  color: var(--branca);
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  transition: color 0.9s ease;
+}
+h2:hover{
+  color: #ff00f7;
+  text-decoration: underline;
+}
+.tecla:hover{
+  transform: scale(1.1);
+}
